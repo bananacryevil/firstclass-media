@@ -26,51 +26,51 @@ function App() {
           </div>
           <div className='cards'>
             <div className='card'>
-              <span className='emblem'>💎</span>
+              <span className='emblem'><img src='/icons/essentials.png'></img></span>
               <span className='level'>Essentials</span>
               <span className='price'>$399</span>
               <hr />
               <ul>
-                <li>Pro 1</li>
-                <li>Pro 2</li>
-                <li>Pro 3</li>
-                <li>Pro 4</li>
-                <li>Pro 5</li>
+                <li>Targeted Ads</li>
+                <li>Budget Control</li>
+                <li>Content Recommendations</li>
+                <li>Ad Copywriting</li>
+                <li>Monthly Reporting</li>
               </ul>
             </div>
             <div className='card big'>
-              <span className='emblem'>💎</span>
+              <span className='emblem'><img src='/icons/cut-diamond.png'></img></span>
               <span className='level'>Professional</span>
               <span className='price'>$799</span>
               <hr />
               <ul>
-                <li>Pro 1</li>
-                <li>Pro 2</li>
-                <li>Pro 3</li>
-                <li>Pro 4</li>
-                <li>Pro 5</li>
+                <li>Targeted Ads</li>
+                <li>Budget Control</li>
+                <li>Content Recommendations</li>
+                <li>Ad Copywriting</li>
+                <li>Monthly Reporting</li>
               </ul>
             </div>
             <div className='card'>
-              <span className='emblem'>💎</span>
+              <span className='emblem'><img src='/icons/rupee.png'></img></span>
               <span className='level'>Enterprise</span>
               <span className='price'>$1299</span>
               <hr />
               <ul>
-                <li>Pro 1</li>
-                <li>Pro 2</li>
-                <li>Pro 3</li>
-                <li>Pro 4</li>
-                <li>Pro 5</li>
+                <li>Targeted Ads</li>
+                <li>Budget Control</li>
+                <li>Content Recommendations</li>
+                <li>Ad Copywriting</li>
+                <li>Monthly Reporting</li>
               </ul>
             </div>
           </div>
 
           {/* bottom */}
           <div className='footer'>
-            <span>📧 contact@firstclass.media</span>
-            <span>📞 555-555-5555</span>
-            <span><a href='#'>🔗 Socials</a></span>
+            <span>📧 sales@firstclass-media.com</span>
+            <span>📞 773-202-4560</span>
+            <span><a href='#'>🔗 firstclass-media.com</a></span>
           </div>
         </div>
       </div>
