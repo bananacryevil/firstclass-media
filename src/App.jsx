@@ -4,8 +4,22 @@ function App() {
 
   return (
     <>
-      <h1>First Class</h1>
-      <h2>DIGITAL MARKETING</h2>
+      <div className='top'>
+        <div className='top-content-wrapper'>
+          <div className='top-logo-cta'>
+            <span className='logo'><img src='/vite.svg'></img></span>
+            <span className='cta'>Professional Website Design Services</span>
+          </div>
+          <div className='top-image'>
+            <img src='/stock.png'></img>
+          </div>
+        </div>
+      </div>
+      <div className='mid'>
+      </div>
+      <div className='bottom'>
+
+      </div>
     </>
   )
 }

@@ -1,6 +1,139 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  background-color: rgb(177, 177, 177);
+  margin: 0;
+  font-family: 'Segoe UI', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: linear-gradient(44deg, rgb(45, 102, 85) 0.5%, rgb(5, 12, 10) 22%, rgba(0, 0, 0, 1) 30%);
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 350px;
+  padding: 2rem 1rem;
+  gap: 2rem;
+}
+
+.top-logo-cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.cta {
+  font-size: clamp(1.5rem, 10vw, 3.5rem);
+  font-weight: 100;
+  line-height: 1.2;
+  padding: 20px;
+}
+
+.top-image {
+  width: 100%;
+  max-width: 300px;
+  margin: 30px auto;
+  position: relative;
+}
+
+.top-image img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+  .top-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        /* Bar 1 */
+        linear-gradient(to right, black, black) left 0% top 0 / 6% 100%,
+        /* Bar 2 */
+        linear-gradient(to right, black, black) left 7% top 0 / 5.4% 100%,
+        /* Bar 3 */
+        linear-gradient(to right, black, black) left 13.4% top 0 / 4.8% 100%,
+        /* Bar 4 */
+        linear-gradient(to right, black, black) left 19.2% top 0 / 4.2% 100%,
+        /* Bar 5 */
+        linear-gradient(to right, black, black) left 24.4% top 0 / 3.6% 100%,
+        /* Bar 6 */
+        linear-gradient(to right, black, black) left 29% top 0 / 3% 100%,
+        /* Bar 7 */
+        linear-gradient(to right, black, black) left 33% top 0 / 2.4% 100%,
+        /* Bar 8 */
+        linear-gradient(to right, black, black) left 36.4% top 0 / 1.8% 100%,
+        /* Bar 9 */
+        linear-gradient(to right, black, black) left 39.2% top 0 / 1.2% 100%,
+        /* Bar 10 */
+        linear-gradient(to right, black, black) left 41.4% top 0 / 0.6% 100%;
+    background-repeat: no-repeat;
+    pointer-events: none;
+  }
+
+@media (min-width: 768px) {
+  .top {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    height: 60vh;
+    min-height: 400px;
+    max-height: 700px;
+  }
+
+  .top-content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+  }
+
+  .top-logo-cta {
+    align-items: flex-start;
+    text-align: left;
+    flex: 1;
+  }
+
+  .cta {
+    font-size: clamp(5rem, 4vw, 5.5rem);
+  }
+
+  .top-image {
+    flex: 1;
+    max-width: none;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+
+
+  .top-image img {
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+  }
+}
+
+@media (min-width: 2300px)
+{
+  body {
+    margin: auto;
+    max-width: 2300px;
+  }
 }
