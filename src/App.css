@@ -26,14 +26,13 @@ body {
 }
 
 .logo img {
-  width: 50px;
+  max-width: 250px;
 }
 
 .cta {
-  font-size: clamp(1.5rem, 10vw, 3.5rem);
+  font-size: clamp(3.5rem, 10vw, 5.5rem);
   font-weight: 100;
   line-height: 1.2;
-  padding: 20px;
 }
 
 .top-image {
@@ -88,7 +87,6 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0 2rem;
-    height: 60vh;
     min-height: 400px;
     max-height: 700px;
   }
@@ -135,5 +133,155 @@ body {
   body {
     margin: auto;
     max-width: 2300px;
+  }
+}
+
+.mid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: linear-gradient(-35deg, rgb(45, 102, 85) 0.5%, rgb(5, 12, 10) 22%, rgba(0, 0, 0, 1) 30%);
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 350px;
+  padding: 2rem 1rem;
+  gap: 2rem;
+}
+
+.mid-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.pricing {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  text-align: center;
+  padding: 50px;
+}
+
+.pricing-header {
+  font-size: 1.75rem;
+  font-weight: bold;
+  max-width: 250px;
+}
+
+.pricing-copy {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3.5rem;
+}
+
+.card {
+  /* background: hsla(177, 95%, 8%, 1);
+
+  background: linear-gradient(-35deg, hsla(177, 95%, 8%, 1) 0%, hsla(168, 100%, 12%, 1) 14%, hsla(173, 97%, 14%, 1) 22%, hsla(177, 97%, 23%, 1) 50%, hsla(176, 97%, 30%, 1) 73%, hsla(168, 84%, 67%, 1) 100%);
+
+  background: -moz-linear-gradient(-35deg, hsla(177, 95%, 8%, 1) 0%, hsla(168, 100%, 12%, 1) 14%, hsla(173, 97%, 14%, 1) 22%, hsla(177, 97%, 23%, 1) 50%, hsla(176, 97%, 30%, 1) 73%, hsla(168, 84%, 67%, 1) 100%); */
+
+  background: -webkit-linear-gradient(-35deg, hsla(177, 95%, 8%, .45) 0%, hsla(168, 100%, 12%, .55) 14%, hsla(173, 97%, 14%, .75) 22%, hsla(177, 97%, 23%, .9) 50%, hsla(176, 97%, 30%, .85) 73%, hsla(168, 84%, 67%, .90) 100%);  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 1rem;
+  color: white;
+  flex: 1;
+  max-width: 250px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.card span {
+  padding-left: 35px;
+}
+
+.card.big {
+  transform: scale(1.15);
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card.big:hover {
+  transform: scale(1.25);
+}
+
+.emblem {
+  font-size: 3rem;
+  margin-bottom: -15px;
+}
+
+.level {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.price {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.card hr {
+  width: 80%;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.card ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(45, 102, 85, 0.35);
+  padding: 1.5rem;
+  border-radius: 6px;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer span, .footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .pricing {
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+  }
+
+  .pricing-header {
+    flex: 1;
+  }
+
+  .pricing-copy {
+    flex: 1;
   }
 }
